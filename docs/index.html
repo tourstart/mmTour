@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Windows XP Tour</title>
+        <style>
+            body {
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <object src="tour.swf" width="100%" height="100%">
+            <param name="movie" value="tour.swf">
+        </object>
+        <script>
+            window.RufflePlayer = window.RufflePlayer || {};
+            window.RufflePlayer.config = {
+                "autoplay": "auto"
+            }
+        </script>
+        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+        <noscript>
+            <center>
+                <p>JavaScript is required to view the animated tour. Please enable JavaScript or update your browser.</p>
+            </center>
+        </noscript>
+    </body>
+</html>
